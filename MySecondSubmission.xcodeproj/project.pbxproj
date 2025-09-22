@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6B7E8CA2E81C6DD00AFD100 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = E70200012E80000100000001 /* Common */; };
+		E6B7E8CB2E81C6DD00AFD100 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = E70200022E80000100000001 /* Core */; };
+		E6B7E8CC2E81C6DD00AFD100 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = E70200032E80000100000001 /* DataLayer */; };
+		E6B7E8CD2E81C6DD00AFD100 /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E70200042E80000100000001 /* HomeFeature */; };
+		E6B7E8CE2E81C6DD00AFD100 /* DetailFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E70200052E80000100000001 /* DetailFeature */; };
+		E6B7E8CF2E81C6DD00AFD100 /* FavoritesFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E70200062E80000100000001 /* FavoritesFeature */; };
+		E6B7E8D02E81C6DD00AFD100 /* AboutFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E70200072E80000100000001 /* AboutFeature */; };
+		E6B7E8D12E81C6DD00AFD100 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = E70200022E80000100000001 /* Core */; };
+		E6B89CEE2E76A13D00B97614 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E6B89CED2E76A13D00B97614 /* Alamofire */; settings = {ATTRIBUTES = (Required, ); }; };
+		E6B89CF32E76A15400B97614 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E6B89CF22E76A15400B97614 /* Swinject */; };
+		E6B89CF62E76A16800B97614 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = E6B89CF52E76A16800B97614 /* SwinjectAutoregistration */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E67EBFD02E76D13300B11F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D8B6542E6AE786006F7B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6D8B65B2E6AE786006F7B30;
+			remoteInfo = MySecondSubmission;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E67EBFCC2E76D13300B11F52 /* MySecondSubmissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySecondSubmissionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D8B65C2E6AE786006F7B30 /* MySecondSubmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySecondSubmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E64823FB2E6DAAA400CA39B5 /* Exceptions for "MySecondSubmission" folder in "MySecondSubmission" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Support Files/Debug.xcconfig",
+				"Support Files/Info.plist",
+				"Support Files/Release.xcconfig",
+			);
+			target = E6D8B65B2E6AE786006F7B30 /* MySecondSubmission */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E67EBFCD2E76D13300B11F52 /* MySecondSubmissionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MySecondSubmissionTests;
+			sourceTree = "<group>";
+		};
+		E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E64823FB2E6DAAA400CA39B5 /* Exceptions for "MySecondSubmission" folder in "MySecondSubmission" target */,
+			);
+			path = MySecondSubmission;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E67EBFC92E76D13300B11F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B7E8D12E81C6DD00AFD100 /* Core in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6D8B6592E6AE786006F7B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B7E8D02E81C6DD00AFD100 /* AboutFeature in Frameworks */,
+				E6B7E8CF2E81C6DD00AFD100 /* FavoritesFeature in Frameworks */,
+				E6B7E8CE2E81C6DD00AFD100 /* DetailFeature in Frameworks */,
+				E6B7E8CD2E81C6DD00AFD100 /* HomeFeature in Frameworks */,
+				E6B7E8CC2E81C6DD00AFD100 /* DataLayer in Frameworks */,
+				E6B7E8CB2E81C6DD00AFD100 /* Core in Frameworks */,
+				E6B7E8CA2E81C6DD00AFD100 /* Common in Frameworks */,
+				E6B89CEE2E76A13D00B97614 /* Alamofire in Frameworks */,
+				E6B89CF32E76A15400B97614 /* Swinject in Frameworks */,
+				E6B89CF62E76A16800B97614 /* SwinjectAutoregistration in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6D8B6532E6AE786006F7B30 = {
+			isa = PBXGroup;
+			children = (
+				E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */,
+				E67EBFCD2E76D13300B11F52 /* MySecondSubmissionTests */,
+				E6D8B65D2E6AE786006F7B30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6D8B65D2E6AE786006F7B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6D8B65C2E6AE786006F7B30 /* MySecondSubmission.app */,
+				E67EBFCC2E76D13300B11F52 /* MySecondSubmissionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E67EBFCB2E76D13300B11F52 /* MySecondSubmissionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67EBFD22E76D13300B11F52 /* Build configuration list for PBXNativeTarget "MySecondSubmissionTests" */;
+			buildPhases = (
+				E67EBFC82E76D13300B11F52 /* Sources */,
+				E67EBFC92E76D13300B11F52 /* Frameworks */,
+				E67EBFCA2E76D13300B11F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E67EBFD12E76D13300B11F52 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E67EBFCD2E76D13300B11F52 /* MySecondSubmissionTests */,
+			);
+			name = MySecondSubmissionTests;
+			packageProductDependencies = (
+				E70200022E80000100000001 /* Core */,
+			);
+			productName = MySecondSubmissionTests;
+			productReference = E67EBFCC2E76D13300B11F52 /* MySecondSubmissionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6D8B65B2E6AE786006F7B30 /* MySecondSubmission */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6D8B6672E6AE788006F7B30 /* Build configuration list for PBXNativeTarget "MySecondSubmission" */;
+			buildPhases = (
+				E6D8B6582E6AE786006F7B30 /* Sources */,
+				E6D8B6592E6AE786006F7B30 /* Frameworks */,
+				E6D8B65A2E6AE786006F7B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6D8B66E2E6AE9E8006F7B30 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */,
+			);
+			name = MySecondSubmission;
+			packageProductDependencies = (
+				E6B89CED2E76A13D00B97614 /* Alamofire */,
+				E6B89CF22E76A15400B97614 /* Swinject */,
+				E6B89CF52E76A16800B97614 /* SwinjectAutoregistration */,
+				E70200012E80000100000001 /* Common */,
+				E70200022E80000100000001 /* Core */,
+				E70200032E80000100000001 /* DataLayer */,
+				E70200042E80000100000001 /* HomeFeature */,
+				E70200052E80000100000001 /* DetailFeature */,
+				E70200062E80000100000001 /* FavoritesFeature */,
+				E70200072E80000100000001 /* AboutFeature */,
+			);
+			productName = MySecondSubmission;
+			productReference = E6D8B65C2E6AE786006F7B30 /* MySecondSubmission.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6D8B6542E6AE786006F7B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E67EBFCB2E76D13300B11F52 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E6D8B65B2E6AE786006F7B30;
+					};
+					E6D8B65B2E6AE786006F7B30 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = E6D8B6572E6AE786006F7B30 /* Build configuration list for PBXProject "MySecondSubmission" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				id,
+			);
+			mainGroup = E6D8B6532E6AE786006F7B30;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E6D8B66A2E6AE959006F7B30 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				E6B89CEC2E76A13D00B97614 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E6B89CF12E76A15400B97614 /* XCRemoteSwiftPackageReference "Swinject" */,
+				E6B89CF42E76A16800B97614 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				E6F2C4D12E90F00000AABBCC /* XCRemoteSwiftPackageReference "Modularization-Common-Package" */,
+				E70100022E80000100000001 /* XCLocalSwiftPackageReference "Modules/Core" */,
+				E70100032E80000100000001 /* XCLocalSwiftPackageReference "Modules/DataLayer" */,
+				E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E6D8B65D2E6AE786006F7B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6D8B65B2E6AE786006F7B30 /* MySecondSubmission */,
+				E67EBFCB2E76D13300B11F52 /* MySecondSubmissionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E67EBFCA2E76D13300B11F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6D8B65A2E6AE786006F7B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E67EBFC82E76D13300B11F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6D8B6582E6AE786006F7B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E67EBFD12E76D13300B11F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6D8B65B2E6AE786006F7B30 /* MySecondSubmission */;
+			targetProxy = E67EBFD02E76D13300B11F52 /* PBXContainerItemProxy */;
+		};
+		E6D8B66E2E6AE9E8006F7B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E6D8B66D2E6AE9E8006F7B30 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E67EBFD32E76D13300B11F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22AH352B44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefivex.MySecondSubmissionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySecondSubmission.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySecondSubmission";
+			};
+			name = Debug;
+		};
+		E67EBFD42E76D13300B11F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22AH352B44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefivex.MySecondSubmissionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySecondSubmission.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySecondSubmission";
+			};
+			name = Release;
+		};
+		E6D8B6652E6AE788006F7B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */;
+			baseConfigurationReferenceRelativePath = "Support Files/Debug.xcconfig";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 22AH352B44;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6D8B6662E6AE788006F7B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */;
+			baseConfigurationReferenceRelativePath = "Support Files/Release.xcconfig";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 22AH352B44;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6D8B6682E6AE788006F7B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */;
+			baseConfigurationReferenceRelativePath = "Support Files/Debug.xcconfig";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22AH352B44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MySecondSubmission/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefivex.MySecondSubmission;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6D8B6692E6AE788006F7B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = E6D8B65E2E6AE786006F7B30 /* MySecondSubmission */;
+			baseConfigurationReferenceRelativePath = "Support Files/Release.xcconfig";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22AH352B44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MySecondSubmission/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codefivex.MySecondSubmission;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E67EBFD22E76D13300B11F52 /* Build configuration list for PBXNativeTarget "MySecondSubmissionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67EBFD32E76D13300B11F52 /* Debug */,
+				E67EBFD42E76D13300B11F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6D8B6572E6AE786006F7B30 /* Build configuration list for PBXProject "MySecondSubmission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6D8B6652E6AE788006F7B30 /* Debug */,
+				E6D8B6662E6AE788006F7B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6D8B6672E6AE788006F7B30 /* Build configuration list for PBXNativeTarget "MySecondSubmission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6D8B6682E6AE788006F7B30 /* Debug */,
+				E6D8B6692E6AE788006F7B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E70100022E80000100000001 /* XCLocalSwiftPackageReference "Modules/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/Core;
+		};
+		E70100032E80000100000001 /* XCLocalSwiftPackageReference "Modules/DataLayer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/DataLayer;
+		};
+		E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/Features;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6B89CEC2E76A13D00B97614 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		E6B89CF12E76A15400B97614 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		E6B89CF42E76A16800B97614 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		E6D8B66A2E6AE959006F7B30 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.60.0;
+			};
+		};
+		E6F2C4D12E90F00000AABBCC /* XCRemoteSwiftPackageReference "Modularization-Common-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andika-andriana/Modularization-Common-Package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6B89CED2E76A13D00B97614 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6B89CEC2E76A13D00B97614 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E6B89CF22E76A15400B97614 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6B89CF12E76A15400B97614 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		E6B89CF52E76A16800B97614 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6B89CF42E76A16800B97614 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		E6D8B66D2E6AE9E8006F7B30 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6D8B66A2E6AE959006F7B30 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		E70200012E80000100000001 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6F2C4D12E90F00000AABBCC /* XCRemoteSwiftPackageReference "Modularization-Common-Package" */;
+			productName = Common;
+		};
+		E70200022E80000100000001 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100022E80000100000001 /* XCLocalSwiftPackageReference "Modules/Core" */;
+			productName = Core;
+		};
+		E70200032E80000100000001 /* DataLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100032E80000100000001 /* XCLocalSwiftPackageReference "Modules/DataLayer" */;
+			productName = DataLayer;
+		};
+		E70200042E80000100000001 /* HomeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */;
+			productName = HomeFeature;
+		};
+		E70200052E80000100000001 /* DetailFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */;
+			productName = DetailFeature;
+		};
+		E70200062E80000100000001 /* FavoritesFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */;
+			productName = FavoritesFeature;
+		};
+		E70200072E80000100000001 /* AboutFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70100042E80000100000001 /* XCLocalSwiftPackageReference "Modules/Features" */;
+			productName = AboutFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E6D8B6542E6AE786006F7B30 /* Project object */;
+}

@@ -1,0 +1,31 @@
+# .swiftlint.yml
+
+disabled_rules: # aturan yang dimatikan
+  - trailing_whitespace
+  - force_cast
+
+opt_in_rules: # aturan tambahan kalau mau lebih ketat (optional)
+  # - force_unwrapping
+  # - empty_count
+  - line_length
+
+included: # folder yang mau dilint
+  - MyApp
+  - MyAppTests
+
+excluded: # folder/file yang di-skip
+  - Pods
+  - Carthage
+  - Generated
+
+line_length:
+  warning: 120
+  error: 200
+
+identifier_name:
+  min_length: 2
+  excluded:
+    - i
+    - j
+    - id
+    - ok
