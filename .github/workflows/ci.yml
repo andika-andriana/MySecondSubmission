@@ -38,6 +38,7 @@ jobs:
       - name: Build and test
         run: |
           xcodebuild \
+            -skipPackagePluginValidation \
             -project MySecondSubmission.xcodeproj \
             -scheme MySecondSubmission \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.6' \
