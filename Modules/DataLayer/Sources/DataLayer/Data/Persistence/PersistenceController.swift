@@ -1,7 +1,7 @@
 import CoreData
 
 #if !SWIFT_PACKAGE
-private final class PersistenceBundleFinder {}
+  private final class PersistenceBundleFinder {}
 #endif
 
 public final class PersistenceController {
@@ -11,11 +11,11 @@ public final class PersistenceController {
 
   public init(inMemory: Bool = false) {
     let bundle: Bundle
-#if SWIFT_PACKAGE
-    bundle = .module
-#else
-    bundle = Bundle(for: PersistenceBundleFinder.self)
-#endif
+    #if SWIFT_PACKAGE
+      bundle = .module
+    #else
+      bundle = Bundle(for: PersistenceBundleFinder.self)
+    #endif
 
     guard
       let modelURL = bundle.url(
@@ -24,7 +24,9 @@ public final class PersistenceController {
       ),
       let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL)
     else {
-      fatalError("Failed to locate Core Data model \(PersistenceConstants.containerName)")
+      fatalError(
+        "Failed to locate Core Data model \(PersistenceConstants.containerName)"
+      )
     }
 
     container = NSPersistentContainer(
@@ -33,7 +35,9 @@ public final class PersistenceController {
     )
 
     if inMemory {
-      container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+      container.persistentStoreDescriptions.first?.url = URL(
+        fileURLWithPath: "/dev/null"
+      )
     }
 
     container.loadPersistentStores { _, error in

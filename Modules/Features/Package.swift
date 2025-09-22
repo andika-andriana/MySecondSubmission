@@ -10,18 +10,22 @@ let package = Package(
     .library(name: "HomeFeature", targets: ["HomeFeature"]),
     .library(name: "DetailFeature", targets: ["DetailFeature"]),
     .library(name: "FavoritesFeature", targets: ["FavoritesFeature"]),
-    .library(name: "AboutFeature", targets: ["AboutFeature"])
+    .library(name: "AboutFeature", targets: ["AboutFeature"]),
   ],
   dependencies: [
     .package(path: "../Core"),
-    .package(url: "https://github.com/andika-andriana/Modularization-Common-Package.git", branch: "main")
+    .package(
+      url:
+        "https://github.com/andika-andriana/Modularization-Common-Package.git",
+      branch: "main"
+    ),
   ],
   targets: [
     .target(
       name: "HomeFeature",
       dependencies: [
         .product(name: "Core", package: "Core"),
-        .product(name: "Common", package: "Modularization-Common-Package")
+        .product(name: "Common", package: "Modularization-Common-Package"),
       ]
     ),
     .testTarget(
@@ -32,7 +36,7 @@ let package = Package(
       name: "DetailFeature",
       dependencies: [
         .product(name: "Core", package: "Core"),
-        .product(name: "Common", package: "Modularization-Common-Package")
+        .product(name: "Common", package: "Modularization-Common-Package"),
       ]
     ),
     .testTarget(
@@ -43,7 +47,7 @@ let package = Package(
       name: "FavoritesFeature",
       dependencies: [
         .product(name: "Core", package: "Core"),
-        .product(name: "Common", package: "Modularization-Common-Package")
+        .product(name: "Common", package: "Modularization-Common-Package"),
       ]
     ),
     .testTarget(
@@ -54,12 +58,12 @@ let package = Package(
       name: "AboutFeature",
       dependencies: [
         .product(name: "Core", package: "Core"),
-        .product(name: "Common", package: "Modularization-Common-Package")
+        .product(name: "Common", package: "Modularization-Common-Package"),
       ]
     ),
     .testTarget(
       name: "AboutFeatureTests",
       dependencies: ["AboutFeature"]
-    )
+    ),
   ]
 )

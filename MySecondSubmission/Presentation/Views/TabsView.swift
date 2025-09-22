@@ -31,14 +31,20 @@ struct TabsView: View {
           }
       }
       .tabItem {
-        Label(CommonLocalization.string("favorites.title"), systemImage: "heart.fill")
+        Label(
+          CommonLocalization.string("favorites.title"),
+          systemImage: "heart.fill"
+        )
       }
 
       NavigationStack {
         AboutView(viewModel: profileViewModel)
       }
       .tabItem {
-        Label(CommonLocalization.string("about.title"), systemImage: "person.crop.circle")
+        Label(
+          CommonLocalization.string("about.title"),
+          systemImage: "person.crop.circle"
+        )
       }
     }
   }

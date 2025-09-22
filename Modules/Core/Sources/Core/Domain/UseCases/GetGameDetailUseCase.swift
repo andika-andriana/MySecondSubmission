@@ -1,6 +1,7 @@
 import Combine
 
-public protocol GetGameDetailUseCase: PublisherUseCase where Request == Int, Response == AnyPublisher<Game, Error> {}
+public protocol GetGameDetailUseCase: PublisherUseCase
+where Request == Int, Response == AnyPublisher<Game, Error> {}
 
 public struct DefaultGetGameDetailUseCase: GetGameDetailUseCase {
   private let repository: GameRepository

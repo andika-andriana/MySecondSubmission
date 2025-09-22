@@ -31,13 +31,15 @@ public final class RAWGAPIClient: RAWGAPIClientType {
       .eraseToAnyPublisher()
   }
 
-  public func searchGames(query: String, pageSize: Int) -> AnyPublisher<[Game], Error> {
+  public func searchGames(query: String, pageSize: Int) -> AnyPublisher<
+    [Game], Error
+  > {
     guard
       let url = RAWGURLBuilder.makeURL(
         path: "/api/games",
         queries: [
           URLQueryItem(name: "page_size", value: "\(pageSize)"),
-          URLQueryItem(name: "search", value: query)
+          URLQueryItem(name: "search", value: query),
         ]
       )
     else {

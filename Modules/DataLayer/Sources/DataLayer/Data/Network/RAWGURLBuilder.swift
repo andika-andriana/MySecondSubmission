@@ -9,7 +9,8 @@ import Foundation
 
 enum RAWGURLBuilder {
   static func makeURL(path: String, queries: [URLQueryItem] = []) -> URL? {
-    guard var comp = URLComponents(string: APIConfig.baseURL.absoluteString) else { return nil }
+    guard var comp = URLComponents(string: APIConfig.baseURL.absoluteString)
+    else { return nil }
     comp.path = path
     var items = queries
     items.append(URLQueryItem(name: "key", value: APIConfig.apiKey))

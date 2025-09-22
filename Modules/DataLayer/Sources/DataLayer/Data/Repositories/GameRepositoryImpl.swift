@@ -12,7 +12,9 @@ public final class GameRepositoryImpl: GameRepository {
     apiClient.fetchGames(pageSize: pageSize)
   }
 
-  public func searchGames(query: String, pageSize: Int) -> AnyPublisher<[Game], Error> {
+  public func searchGames(query: String, pageSize: Int) -> AnyPublisher<
+    [Game], Error
+  > {
     apiClient.searchGames(query: query, pageSize: pageSize)
   }
 

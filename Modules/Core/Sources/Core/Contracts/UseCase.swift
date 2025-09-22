@@ -6,8 +6,8 @@ public protocol UseCase {
   func execute(_ request: Request) -> Response
 }
 
-public extension UseCase where Request == Void {
-  func execute() -> Response {
+extension UseCase where Request == Void {
+  public func execute() -> Response {
     execute(())
   }
 }
@@ -15,7 +15,8 @@ public extension UseCase where Request == Void {
 public struct AnyUseCase<Request, Response>: UseCase {
   private let _execute: (Request) -> Response
 
-  public init<T: UseCase>(_ useCase: T) where T.Request == Request, T.Response == Response {
+  public init<T: UseCase>(_ useCase: T)
+  where T.Request == Request, T.Response == Response {
     _execute = useCase.execute
   }
 
@@ -26,22 +27,27 @@ public struct AnyUseCase<Request, Response>: UseCase {
 
 public protocol PublisherUseCase: UseCase where Response: Publisher {}
 
-public extension PublisherUseCase {
-  func callAsFunction(_ request: Request) -> Response {
+extension PublisherUseCase {
+  public func callAsFunction(_ request: Request) -> Response {
     execute(request)
   }
 }
 
-public struct AnyPublisherUseCase<Request, Output, Failure: Error>: PublisherUseCase {
+public struct AnyPublisherUseCase<Request, Output, Failure: Error>:
+  PublisherUseCase
+{
   public typealias Response = AnyPublisher<Output, Failure>
 
   private let _execute: (Request) -> Response
 
   public init<T: PublisherUseCase>(
     _ useCase: T
-  ) where T.Request == Request,
-          T.Response.Output == Output,
-          T.Response.Failure == Failure {
+  )
+  where
+    T.Request == Request,
+    T.Response.Output == Output,
+    T.Response.Failure == Failure
+  {
     _execute = { request in
       useCase.execute(request).eraseToAnyPublisher()
     }

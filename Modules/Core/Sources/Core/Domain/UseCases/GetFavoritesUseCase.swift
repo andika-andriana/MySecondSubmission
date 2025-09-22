@@ -1,6 +1,7 @@
 import Combine
 
-public protocol GetFavoritesUseCase: PublisherUseCase where Request == Void, Response == AnyPublisher<[Game], Error> {}
+public protocol GetFavoritesUseCase: PublisherUseCase
+where Request == Void, Response == AnyPublisher<[Game], Error> {}
 
 public struct DefaultGetFavoritesUseCase: GetFavoritesUseCase {
   private let repository: FavoriteRepository

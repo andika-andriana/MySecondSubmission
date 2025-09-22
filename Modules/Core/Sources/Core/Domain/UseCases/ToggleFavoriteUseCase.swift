@@ -1,8 +1,11 @@
 import Combine
 
-public protocol AddFavoriteUseCase: PublisherUseCase where Request == Game, Response == AnyPublisher<Void, Error> {}
-public protocol RemoveFavoriteUseCase: PublisherUseCase where Request == Int, Response == AnyPublisher<Void, Error> {}
-public protocol ObserveFavoriteUseCase: PublisherUseCase where Request == Int, Response == AnyPublisher<Bool, Never> {}
+public protocol AddFavoriteUseCase: PublisherUseCase
+where Request == Game, Response == AnyPublisher<Void, Error> {}
+public protocol RemoveFavoriteUseCase: PublisherUseCase
+where Request == Int, Response == AnyPublisher<Void, Error> {}
+public protocol ObserveFavoriteUseCase: PublisherUseCase
+where Request == Int, Response == AnyPublisher<Bool, Never> {}
 
 public struct DefaultAddFavoriteUseCase: AddFavoriteUseCase {
   private let repository: FavoriteRepository

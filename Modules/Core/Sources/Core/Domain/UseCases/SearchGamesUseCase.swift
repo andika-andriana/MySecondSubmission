@@ -10,7 +10,8 @@ public struct SearchGamesRequest: Equatable {
   }
 }
 
-public protocol SearchGamesUseCase: PublisherUseCase where Request == SearchGamesRequest, Response == AnyPublisher<[Game], Error> {}
+public protocol SearchGamesUseCase: PublisherUseCase
+where Request == SearchGamesRequest, Response == AnyPublisher<[Game], Error> {}
 
 public struct DefaultSearchGamesUseCase: SearchGamesUseCase {
   private let repository: GameRepository
@@ -19,7 +20,9 @@ public struct DefaultSearchGamesUseCase: SearchGamesUseCase {
     self.repository = repository
   }
 
-  public func execute(_ request: SearchGamesRequest) -> AnyPublisher<[Game], Error> {
+  public func execute(_ request: SearchGamesRequest) -> AnyPublisher<
+    [Game], Error
+  > {
     repository.searchGames(query: request.query, pageSize: request.pageSize)
   }
 }

@@ -13,7 +13,8 @@ public final class FavoriteRepositoryImpl: FavoriteRepository {
     Future { [context] promise in
       context.perform {
         do {
-          let request: NSFetchRequest<FavoriteGame> = FavoriteGame.fetchRequest()
+          let request: NSFetchRequest<FavoriteGame> =
+            FavoriteGame.fetchRequest()
           let items = try context.fetch(request).map { $0.toDomain() }
           promise(.success(items))
         } catch {
@@ -44,7 +45,8 @@ public final class FavoriteRepositoryImpl: FavoriteRepository {
     Future { [context] promise in
       context.perform {
         do {
-          let request: NSFetchRequest<FavoriteGame> = FavoriteGame.fetchRequest()
+          let request: NSFetchRequest<FavoriteGame> =
+            FavoriteGame.fetchRequest()
           request.predicate = NSPredicate(format: "id == %lld", id)
           if let object = try context.fetch(request).first {
             context.delete(object)

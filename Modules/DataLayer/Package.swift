@@ -14,8 +14,12 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../Core"),
-    .package(url: "https://github.com/andika-andriana/Modularization-Common-Package.git", branch: "main"),
-    .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.10.2")
+    .package(
+      url:
+        "https://github.com/andika-andriana/Modularization-Common-Package.git",
+      branch: "main"
+    ),
+    .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.10.2"),
   ],
   targets: [
     .target(
@@ -23,7 +27,7 @@ let package = Package(
       dependencies: [
         .product(name: "Core", package: "Core"),
         .product(name: "Common", package: "Modularization-Common-Package"),
-        .product(name: "Alamofire", package: "Alamofire")
+        .product(name: "Alamofire", package: "Alamofire"),
       ],
       resources: [
         .process("Resources")
@@ -32,6 +36,6 @@ let package = Package(
     .testTarget(
       name: "DataLayerTests",
       dependencies: ["DataLayer"]
-    )
+    ),
   ]
 )

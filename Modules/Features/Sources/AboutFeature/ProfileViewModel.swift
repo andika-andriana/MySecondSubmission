@@ -14,10 +14,8 @@ public final class ProfileViewModel: ObservableObject {
   }
 
   public var isValid: Bool {
-    profile.name.isNotBlank &&
-    profile.job.isNotBlank &&
-    profile.interests.isNotBlank &&
-    profile.email.isValidEmail
+    profile.name.isNotBlank && profile.job.isNotBlank
+      && profile.interests.isNotBlank && profile.email.isValidEmail
   }
 
   public func save() {
@@ -29,12 +27,12 @@ public final class ProfileViewModel: ObservableObject {
   }
 }
 
-private extension String {
-  var isNotBlank: Bool {
+extension String {
+  fileprivate var isNotBlank: Bool {
     !trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
   }
 
-  var isValidEmail: Bool {
+  fileprivate var isValidEmail: Bool {
     range(of: #"^\S+@\S+\.\S+$"#, options: .regularExpression) != nil
   }
 }

@@ -15,14 +15,22 @@ public struct DetailView: View {
     ScrollView {
       VStack(alignment: .leading, spacing: 16) {
         if let game = viewModel.game {
-          TimedAsyncImage(
-            urlString: game.imageURL?.absoluteString,
-            timeout: 5,
-            cornerRadius: 12,
-            contentMode: .fill,
-            frameWidth: nil,
-            frameHeight: 200
-          )
+          VStack(alignment: .leading, spacing: 16) {
+            GeometryReader { geo in
+              let width = geo.size.width
+              TimedAsyncImage(
+                urlString: game.imageURL?.absoluteString,
+                timeout: 6,
+                cornerRadius: 12,
+                contentMode: .fill,
+                frameWidth: width,
+                frameHeight: 200
+              )
+              .frame(width: width, height: 200, alignment: .center)
+              .clipped()
+            }
+            .frame(height: 200)
+          }
 
           Text(game.title)
             .font(.largeTitle)

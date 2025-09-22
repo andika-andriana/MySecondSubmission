@@ -38,6 +38,7 @@ public struct AboutView: View {
       ToolbarItemGroup(placement: .topBarTrailing) {
         NavigationLink(CommonLocalization.string("about.edit")) {
           EditProfileView(viewModel: viewModel)
+            .toolbar(.hidden, for: .tabBar)
         }
       }
     }

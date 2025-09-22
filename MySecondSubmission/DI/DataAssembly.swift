@@ -6,8 +6,11 @@ import SwinjectAutoregistration
 
 final class DataAssembly: Assembly {
   func assemble(container: Container) {
-    container.autoregister(RAWGAPIClientType.self, initializer: RAWGAPIClient.init)
-      .inObjectScope(.container)
+    container.autoregister(
+      RAWGAPIClientType.self,
+      initializer: RAWGAPIClient.init
+    )
+    .inObjectScope(.container)
 
     container.register(PersistenceController.self) { _ in
       PersistenceController.shared
@@ -19,11 +22,16 @@ final class DataAssembly: Assembly {
     }
     .inObjectScope(.container)
 
-    container.autoregister(GameRepository.self, initializer: GameRepositoryImpl.init)
-      .inObjectScope(.container)
+    container.autoregister(
+      GameRepository.self,
+      initializer: GameRepositoryImpl.init
+    )
+    .inObjectScope(.container)
 
     container.register(FavoriteRepository.self) { resolver in
-      FavoriteRepositoryImpl(context: resolver.resolve(NSManagedObjectContext.self)!)
+      FavoriteRepositoryImpl(
+        context: resolver.resolve(NSManagedObjectContext.self)!
+      )
     }
     .inObjectScope(.container)
   }
